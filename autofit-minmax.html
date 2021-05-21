@@ -1,0 +1,45 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .container {
+      display: grid;
+      grid-gap: 5px;
+      /* grid-template-columns: repeat(6, 100px); */
+      /* (Not responsive : width of 100px is fixed) */
+      /* grid-template-columns: repeat(6, 1fr); */
+      /* (it is responsive : by flexibility of 1fr) */
+      /* grid-template-columns: repeat(auto-fit, 100px); */
+      /* (responsive but leaves space at the end of row) */
+      /* grid-template-columns: repeat(auto-fit, 1fr);  */
+      /* Gives only one column */
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      /* It gives each column of minimum 100px width and upto 1fr, but ugly rows */
+      grid-template-rows: repeat(2, 100px);
+    }
+  </style>
+  <title>Auto-fit and minmax - CSS Grid</title>
+</head>
+
+<body>
+  <div class="container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+  </div>
+  <div class="pages">
+    <a href="index.html">Home</a>
+  </div>
+</body>
+
+</html>
