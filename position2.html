@@ -1,0 +1,48 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    .container {
+      display: grid;
+      height: 100vh;
+      grid-gap: 5px;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 48px auto 48px;
+    }
+
+    .header {
+      grid-column: 1 / 11;
+      /* short cut to: */
+      /* grid-column-start:1;
+      grid-column-end:11; */
+    }
+
+    .menu {
+      grid-row: 1 / span 3;
+      grid-column: 11 / -1
+    }
+
+    .content {
+      grid-column: 1 / span 10;
+    }
+
+    .footer {
+      grid-column: 1 / span 10;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">Header</div>
+    <div class="menu">Menu</div>
+    <div class="content">Content</div>
+    <div class="footer">Footer</div>
+  </div>
+  <div class="pages">
+    <a href="index.html">Home</a>
+  </div>
+</body>
+
+</html>
