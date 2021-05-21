@@ -1,8 +1,40 @@
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-  </head>
-  <body>
-    <h2>oh whaaa!</h2>
-  </body>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    .container {
+      display: grid;
+      height: 100vh;
+
+      /* grid-template-rows: repeat(2, 50px); */
+      /* same as 50px 50px; */
+
+      /* grid-template-columns: repeat(3, 1fr); */
+      /*same as 1fr 1fr 1fr;*/
+      /* to make middle column 2 times bigger than other columns 1fr 2fr 1fr */
+
+      grid-gap: 5px;
+
+      grid-template: repeat(2, 50px) / repeat(3, 1fr);
+      /*shortcut to combine: grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 50px);*/
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+  </div>
+
+  <div class="pages">
+    <a href="index.html">Home</a>
+  </div>
+</body>
+
 </html>
