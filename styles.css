@@ -31,3 +31,15 @@ body {
 .container > div:nth-child(4n) {
   background-color: #ffcc5c;
 }
+
+.pages {
+  margin-top: 20px;
+  background-color: skyblue;
+
+  color: white;
+}
+
+.pages a {
+  text-decoration: none;
+  padding: 5px;
+}

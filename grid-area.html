@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    .container {
+      display: grid;
+      height: 100vh;
+      grid-gap: 5px;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 48px auto 48px;
+      grid-template-areas:
+        "m m h h h h h h h h h h"
+        "m m c c c c c c c c c c"
+        ". . f f f f f f f f f ."
+        /* . (dot) represents blank column */
+    }
+
+    .header {
+      grid-area: h;
+    }
+
+    .menu {
+      grid-area: m;
+    }
+
+    .content {
+      grid-area: c;
+    }
+
+    .footer {
+      grid-area: f;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">Header</div>
+    <div class="menu">Menu</div>
+    <div class="content">Content</div>
+    <div class="footer">Footer</div>
+  </div>
+  <div class="pages">
+    <a href="index.html">Home</a>
+  </div>
+</body>
+
+</html>
