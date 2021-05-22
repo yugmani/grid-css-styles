@@ -34,9 +34,9 @@ body {
 }
 
 .pages {
+  display: block;
   margin-top: 20px;
   background-color: skyblue;
-
   color: white;
 }
 

@@ -1,0 +1,33 @@
+body {
+  position: relative;
+}
+.container {
+  background-color: #fff;
+  color: #444;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.box .box {
+  background-color: #ccc;
+  color: #444;
+}
+
+.pages {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  margin-top: 20px;
+  background-color: skyblue;
+  color: white;
+}
+
+.pages a {
+  text-decoration: none;
+}
